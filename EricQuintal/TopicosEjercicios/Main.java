@@ -23,6 +23,7 @@ public class Main extends Frame implements MouseListener, MouseMotionListener,Ke
         mundo.addKeyListener(this);
         this.add(p,BorderLayout.CENTER);
         p.setSize(500,400);
+        
         this.setVisible(true);
         this.addWindowListener(new WindowAdapter(){
             public void windowClosing(WindowEvent e){
@@ -108,27 +109,28 @@ public class Main extends Frame implements MouseListener, MouseMotionListener,Ke
             case 'a':
             case KeyEvent.VK_A:
             mundo.setX(mundo.getX()-1);
-            mundo.repaint();
+            
                 
                 break;
             case 's':
             case KeyEvent.VK_S:
             mundo.setY(mundo.getY()+1);
-            mundo.repaint();
+            
 
             case 'd':
             case KeyEvent.VK_D:
             mundo.setX(mundo.getX()+1);
-            mundo.repaint();
+            
 
             case 'w':
             case KeyEvent.VK_W:
             mundo.setY(mundo.getY()-1);
-            mundo.repaint();
+            
         
             default:
                 break;
         }
+        mundo.repaint();
         
     }
 

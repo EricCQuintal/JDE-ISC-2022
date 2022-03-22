@@ -13,13 +13,17 @@ public class Ejercicio4 extends Canvas{
         y=28;
         w=h=100;
 
-        food_x= ((int) Math.random()* this.getWidth();
-        food_y= ((int )Math.ramdom()* this.get)
+        food_x= ((int) Math.random()* 500);
+        food_y= ((int )Math.random()* 400);
+        System.out.printf(food_x+""+food_y); 
+        food_s= 20;
     }
    
 
 
     public void paint (Graphics g) {
+
+        colision();
         
         
         g.drawRect(x, y, w, h);
@@ -33,6 +37,18 @@ public class Ejercicio4 extends Canvas{
 
         
 
+    }
+
+
+
+    private void colision() {
+        // La posisicion x  de la principal es mayor que la psoscicion de la secundaria 
+        // La posisicion en x de la princiapal es maner que la psosicicion de la secundaria 
+        // La psosicion  
+        if (x>=food_x && y>=food_y && (x+w)> food_x && (y+h)> food_y) {
+            
+            
+        }
     }
 
 
@@ -54,6 +70,9 @@ public class Ejercicio4 extends Canvas{
     public int getY() {
         // TODO Auto-generated method stub
         return y;
+    }
+    public void setSprite(){
+        
     }
 
 
